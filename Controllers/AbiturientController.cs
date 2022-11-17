@@ -15,8 +15,6 @@ namespace AspNetCore.Controllers
         [HttpGet]
         public IEnumerable<Abiturient> Get()
         {
-            var abiturient = new Abiturient();
-            abiturient.Sum = abiturient.Matem * abiturient.Rus * abiturient.Inf;
             return Abiturients;
         }
         [HttpGet("stats")]
